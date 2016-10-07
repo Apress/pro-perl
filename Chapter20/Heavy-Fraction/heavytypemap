@@ -1,0 +1,17 @@
+TYPEMAP
+percent		T_PERCENT
+
+INPUT
+T_PERCENT
+	{
+	    IV tmp_$var = SvUV($arg);
+	    if (tmp_$var >=0 && tmp_$var <=100) {
+		$var = ($type)SvUV($arg);
+	    } else {
+		Perl_croak(aTHX_ \"$var is not in range 0..100\");
+	    }	
+	}
+
+OUTPUT
+T_PERCENT
+	sv_setuv($arg, (UV)$var);

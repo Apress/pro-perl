@@ -1,0 +1,10 @@
+Changes
+Defines.xs
+Makefile.PL
+MANIFEST
+ppport.h
+README
+t/My-Defines.t
+fallback/const-c.inc
+fallback/const-xs.inc
+lib/My/Defines.pm

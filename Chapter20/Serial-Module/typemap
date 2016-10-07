@@ -1,0 +1,31 @@
+TYPEMAP
+
+# Ptr version
+serial_t * 	T_PTROBJ
+# NonPtr version
+serial_t 	T_SERIAL
+
+INPUT
+T_SERIAL
+        if (SvROK($arg) && SvTYPE(SvRV($arg)) == SVt_PVHV) {
+            SV** tmpsvp;
+
+            tmpsvp = hv_fetch((HV*)SvRV($arg),\"name\",4,FALSE);
+            $var.name = (tmpsvp==NULL)
+              ? \"\" : SvPV_nolen(*tmpsvp);
+            tmpsvp = hv_fetch((HV*)SvRV($arg),\"number\",6,FALSE);
+            $var.number = (tmpsvp==NULL)
+              ? 0  : SvIV(*tmpsvp);
+        } else {
+            Perl_croak(aTHX_ \"$var is not a hash reference\");
+        }
+
+OUTPUT
+T_SERIAL
+        {
+            HV* serial = newHV();
+            hv_store(serial,"name", 4, newSVpv($var.name,0), 0);
+            hv_store(serial,"number",6,newSViv($var.number), 0);
+            /* sv_setsv($arg, newRV_noinc((SV*)serial)); /*non-blessed href*/
+            sv_setsv($arg, sv_bless(newRV_noinc((SV*)serial), gv_stashpv("Serial",1))); /*blessed href*/
+        }	

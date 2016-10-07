@@ -1,0 +1,14 @@
+START
+This is record 0
+FINISH
+
+START
+This is record 1
+FINISH
+
+This is between records
+
+START This is record 2 FINISH
+And still record 2
+FINISH
+

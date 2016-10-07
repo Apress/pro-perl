@@ -1,0 +1,6 @@
+# Index created by AutoSplit for My/AutoModule.pm
+#    (file acts as timestamp)
+package My::AutoModule;
+sub two  ;
+sub three  ;
+1;

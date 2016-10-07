@@ -1,0 +1,6 @@
+Revision history for Perl extension My::Functions.
+
+0.01  Sat Aug  7 23:33:14 2004
+	- original version; created by h2xs 1.23 with options
+		-n My::Functions -F '-I/other/include --std=c99' -L/other/lib -lm -lnsc -lsocket
+

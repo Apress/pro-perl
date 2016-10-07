@@ -1,0 +1,6 @@
+Revision history for Perl extension My::Defines.
+
+0.01  Sat Aug  7 22:56:12 2004
+	- original version; created by h2xs 1.23 with options
+		-n My::Defines defines.h
+

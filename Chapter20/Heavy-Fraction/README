@@ -1,0 +1,37 @@
+Heavy-Fraction version 1.00
+===========================
+
+This is Heavy::Fraction, an example XS module containing the heavy_fraction
+example, and several others.
+
+See 'Fraction.xs' for the XS code examples, and the 't' directory for a suite
+of tests that exercise the various functions defined in this module. The
+Perl part of the module is in lib/Heavy/Fraction.pm (it is unmodified apart
+from making the functions provided by Fractions.xs available for export).
+
+BUILDING AND TESTING
+
+To exercise the XS code in this module, build it and use the 'make test'
+target with the following commands:
+
+   perl Makefile.PL
+   make
+   make test
+
+Look at the test scripts in the 't' subdirectory to see what the test
+target actually does.
+
+INSTALLATION
+
+It is doubtful that you would want to install this module, but in the
+unlikely event that you do, type the following additional command:
+
+   make install
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2005 by Peter Wainwright
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.5 or,
+at your option, any later version of Perl 5 you may have available.

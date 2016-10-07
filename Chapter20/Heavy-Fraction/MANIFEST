@@ -1,0 +1,15 @@
+Changes
+Fraction.xs
+Makefile.PL
+MANIFEST
+ppport.h
+README
+t/1_Heavy-Fraction.t
+t/2_Misc.t
+t/3_Count-Down.t
+t/4_Average.t
+t/5_PositiveOrUndef.t
+t/6_Percent.t
+fallback/const-c.inc
+fallback/const-xs.inc
+lib/Heavy/Fraction.pm

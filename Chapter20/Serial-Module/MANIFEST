@@ -1,0 +1,12 @@
+Changes
+Makefile.PL
+MANIFEST
+ppport.h
+README
+Module.xs
+t/1_Serial-Module.t
+t/2_Serial-Ptr.t
+t/3_Serial-NonPtr.t
+fallback/const-c.inc
+fallback/const-xs.inc
+lib/Serial/Module.pm

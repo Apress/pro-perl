@@ -1,0 +1,49 @@
+This is the source code archive for Pro Perl, ISBN 1-59059-438-X.
+(version 1.0, created 2005/3/1)
+
+------------------------------------------------------------------------------
+
+All the examples are designed to be run in place wherever the archive is
+unpacked - no installation is necessary.
+
+Every example in the archive additionally contains a page reference, which 
+gives the location of the example in the book.  Some additional examples have
+been placed in the archive to exercise code that does not cite a test program
+in the text.  These examples are marked 'additional' along with the closest
+applicable page reference.
+
+Some examples need files as input to function.  Suitable input files have been
+provided (whether given in the text or not) for these examples. Each file is
+noted in an additional comment line near the top of the example program that
+uses it.
+
+Examples are collected according to the chapter in which they appear:
+
+    Chapter 01 - Introducing Perl
+    Chapter 02 - Basic Concepts
+    Chapter 03 - Scalars: Integers, Floating-Point Numbers, and Strings
+    Chapter 04 - Operators
+    Chapter 05 - Arrays, Hashes, References, and Typeglobs
+    Chapter 06 - Structire, Flow, and Control
+    Chapter 07 - Subroutines
+    Chapter 08 - Scope and Visibility
+    Chapter 09 - Using Modules
+    Chapter 10 - Inside Modules and Packages
+    Chapter 11 - Interpolation and Regular Expressions
+    Chapter 12 - Input and Output with Filehandles
+    Chapter 13 - Files and Directories
+    Chapter 14 - Command Line and Shell Interaction
+    Chapter 15 - Terminal Input and Output
+    Chapter 16 - Warnings and Errors
+    Chapter 17 - Debugging, Testing, and Profiling
+    Chapter 18 - Text Processing, Documentation, and Reports
+    Chapter 19 - Object-Oriented Perl
+    Chapter 20 - Extending and Embedding Perl
+    Chapter 21 - Processes, Signals, and Threads
+    Chapter 22 - Networking
+    Chapter 23 - Unicode, Locale, and Internationalization
+
+------------------------------------------------------------------------------
+
+If you have any questions, comments, or feedback please send an email to
+Peter.Wainwright@cybrid.net

@@ -1,0 +1,6 @@
+Revision history for Perl extension Serial::Module.
+
+1.00  Tue Mar 01 06:42:00 2005
+	- original version; created by h2xs 1.23 with options
+		-n Serial::Module -b 5.6.0
+

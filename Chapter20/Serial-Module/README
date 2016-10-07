@@ -1,0 +1,44 @@
+Serial version 1.00
+===================
+
+This is Serial, an example XS module containing the newserial and
+number examples. Two versions are presented here:
+
+newserial and number manage a serial_t struct passed as a pointer,
+with the value being opaque to the scalar reference that points to it
+within Perl
+
+newserial_nonptr and number_nonptr manage a serial_t struct passed
+by value, and make use of the T_SERIAL mappings in the 'typemap'
+file to convert the struct to and from a Perl hash reference.
+
+BUILDING AND TESTING
+
+To exercise the XS code in this module, build it and use the 'make test'
+target with the following commands:
+
+   perl Makefile.PL
+   make
+   make test
+
+Look at the test scripts in the 't' subdirectory to see what the test
+target actually does.
+
+INSTALLATION
+
+It is doubtful that you would want to install this module, but in the
+unlikely event that you do, type the following additional command:
+
+   make install
+
+COPYRIGHT AND LICENCE
+
+Put the correct copyright and licence information here.
+
+Copyright (C) 2005 by Peter Wainwright
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.5 or,
+at your option, any later version of Perl 5 you may have available.
+
+
